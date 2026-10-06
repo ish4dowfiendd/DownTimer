@@ -1,0 +1,30 @@
+#actionPickerContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--container);
+    margin: 1.5em;
+}
+
+#actionPickerContainer p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+#actionPickerContainer select {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: var(--surface);
+    color: var(--text-color);
+    font-size: 1rem;
+    border: 1px solid var(--border);
+    color: var(--text);
+
+}
+
+#actionPickerContainer select:focus {
+    outline: none;
+}
