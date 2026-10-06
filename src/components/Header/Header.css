@@ -1,0 +1,17 @@
+#headerContainer {
+    border: 1px solid red;
+    margin: 0 auto;
+    padding: 0;
+    justify-self: flex-start;
+    width: 100%;
+    color: var(--text-secondary);
+}
+
+#headerContainer p {
+    margin: 0 auto;
+}
+
+.logo {
+    height: 9em;
+    padding: 2em;
+}

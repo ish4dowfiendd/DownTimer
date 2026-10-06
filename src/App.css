@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -12,13 +23,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --container: #0D111A;
+  --surface: #151A25;
+  --surface-light: #181E2A;
+  --border: #2D374D;
+  --primary: #3D8BFF;
+  --text: #F2F4F8;
+  --text-secondary: #9AA9C2;
 }
 
 .container {
   margin: 0;
-  padding-top: 10vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 0;
   text-align: center;
+  background: var(--container);
+  min-height: 100vh;
 }
