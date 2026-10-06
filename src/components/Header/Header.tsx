@@ -1,7 +1,7 @@
 import logo from "../../assets/power-256.png";
 import "./Header.css";
 
-function Header() {
+function Header () {
     return (
         <div id="headerContainer">
             <img src={logo} className="logo" alt="Power Icon Logo" />

@@ -1,0 +1,29 @@
+#modeSelectorContainer {
+    width: 30%;
+    min-width: 300px;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    margin: 2em auto;
+}
+
+#modeSelectorContainer button {
+    width: 50%;
+    padding: 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: var(--surface);
+    color: var(--text);
+    box-shadow: none;
+    border: none;
+}
+
+#modeSelectorContainer .selected {
+    background-color: var(--primary);
+}
