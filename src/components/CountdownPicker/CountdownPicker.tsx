@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './CountdownPicker.css';
 
 function CountdownPicker () {
     const [time, setTime] = useState(Date.now()); // Change to contxt when created
@@ -44,7 +45,7 @@ function CountdownPicker () {
             <div id="hoursContainer" className="numberInputContainer">
                 <div className="numberInputField">
                     <input id="hoursInput" type="number" value={hours} onChange={(e) => updateHours(e.target.value)} />
-                    <div className="numberButtons">
+                    <div className="numberButtonsContainer">
                         <button onClick={incrementHours}>▲</button>
                         <button onClick={decrementHours}>▼</button>
                     </div>
@@ -54,7 +55,7 @@ function CountdownPicker () {
             <div id="minsContainer" className="numberInputContainer">
                 <div className="numberInputField">
                     <input id="minutesInput" type="number" value={minutes} onChange={(e) => updateMinutes(e.target.value)} />
-                    <div className="numberButtons">
+                    <div className="numberButtonsContainer">
                         <button onClick={incrementMinutes}>▲</button>
                         <button onClick={decrementMinutes}>▼</button>
                     </div>

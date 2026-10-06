@@ -3,6 +3,7 @@ import { invoke } from "@tauri-apps/api/core";
 import Header from "./components/Header/Header";
 import ModeSelector from "./components/ModeSelector/ModeSelector";
 import ActionPicker from "./components/ActionPicker/ActionPicker";
+import CountdownPicker from "./components/CountdownPicker/CountdownPicker";
 import "./App.css";
 
 function App () {
@@ -11,6 +12,7 @@ function App () {
       <Header />
       <ModeSelector />
       <ActionPicker />
+      <CountdownPicker />
     </main>
   );
 }
