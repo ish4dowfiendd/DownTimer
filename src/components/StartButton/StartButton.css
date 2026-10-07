@@ -1,0 +1,26 @@
+#startButtonContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-basis: 100%;
+}
+
+#startButton {
+    background-color: var(--primary);
+    color: var(--text);
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    padding: 1em 6em;
+}
+
+#startButton:focus-visible {
+    outline: 1px solid var(--primary);
+    outline-offset: 1px;
+}
+
+.disabledButton {
+    opacity: 0.2;
+}
