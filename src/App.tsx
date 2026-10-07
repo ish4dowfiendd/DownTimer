@@ -6,6 +6,7 @@ import ActionPicker from "./components/ActionPicker/ActionPicker";
 import CountdownPicker from "./components/CountdownPicker/CountdownPicker";
 import StartButton from "./components/StartButton/StartButton";
 import Countdown from "./components/Countdown/Countdown";
+import AlertBox from "./components/AlertBox/AlertBox";
 import "./App.css";
 
 function App () {
@@ -17,6 +18,7 @@ function App () {
       <CountdownPicker />
       <StartButton />
       <Countdown />
+      <AlertBox />
     </main>
   );
 }
