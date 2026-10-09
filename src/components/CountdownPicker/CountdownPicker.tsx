@@ -1,4 +1,4 @@
-import './CountdownPicker.css';
+import TimeInput from '../TimeInput/TimeInput';
 
 type CountdownPickerProps = {
     hours: string;
@@ -44,28 +44,16 @@ function CountdownPicker ({ hours, setHours, minutes, setMinutes }: CountdownPic
     };
 
     return (
-        <div id="timerContainer">
-            <div id="hoursContainer" className="numberInputContainer">
-                <div className="numberInputField">
-                    <input id="hoursInput" type="number" value={hours} onChange={(e) => updateHours(e.target.value)} />
-                    <div className="numberButtonsContainer">
-                        <button onClick={incrementHours}>▲</button>
-                        <button onClick={decrementHours}>▼</button>
-                    </div>
-                </div>
-                <p>Hours</p>
-            </div>
-            <div id="minsContainer" className="numberInputContainer">
-                <div className="numberInputField">
-                    <input id="minutesInput" type="number" value={minutes} onChange={(e) => updateMinutes(e.target.value)} />
-                    <div className="numberButtonsContainer">
-                        <button onClick={incrementMinutes}>▲</button>
-                        <button onClick={decrementMinutes}>▼</button>
-                    </div>
-                </div>
-                <p>Minutes</p>
-            </div>
-        </div>
+        <TimeInput 
+            hours={hours}
+            minutes={minutes}
+            updateHours={updateHours}
+            updateMinutes={updateMinutes}
+            incrementHours={incrementHours}
+            decrementHours={decrementHours}
+            incrementMinutes={incrementMinutes}
+            decrementMinutes={decrementMinutes}
+        />
     )
 };
 
