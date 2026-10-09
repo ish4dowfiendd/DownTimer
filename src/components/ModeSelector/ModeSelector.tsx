@@ -1,8 +1,9 @@
-import { useState } from "react"; // Remove when context exists.
+import { useActionStatus } from "../../context/ActionStatus";
 import "./ModeSelector.css";
 
 function ModeSelector () {
-    const [ mode, setMode ] = useState<"time" | "countdown">("time"); // Set to context when exists.
+    const { mode, setMode } = useActionStatus();
+
     return (
         <div id="modeSelectorContainer">
             <button onClick={() => setMode("time")} className={mode === "time" ? "selected" : ""}>Time</button>
