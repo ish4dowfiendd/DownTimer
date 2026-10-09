@@ -1,11 +1,15 @@
 import { useState } from 'react';
 import './CountdownPicker.css';
 
-function CountdownPicker () {
-    const [time, setTime] = useState(Date.now()); // Change to contxt when created
-    const [hours, setHours] = useState("0");
-    const [minutes, setMinutes] = useState("0");
+type CountdownPickerProps = {
+    hours: string;
+    setHours: (hour: string) => void;
+    minutes: string;
+    setMinutes: (minute: string) => void;
+};
 
+function CountdownPicker ({ hours, setHours, minutes, setMinutes }: CountdownPickerProps) {
+    
     function updateHours (hour: string) {
         if (Number(hour) >= 0) {
             setHours(hour);
