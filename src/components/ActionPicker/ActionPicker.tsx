@@ -1,8 +1,9 @@
-import { useState } from "react"; // remove when context created
+import { useActionStatus } from "../../context/ActionStatus";
 import "./ActionPicker.css";
 
 function ActionPicker () {
-    const [ action, setAction ] = useState<"shutdown" | "restart" | "sleep">("shutdown"); // set to context when exists
+    const { action, setAction } = useActionStatus();
+    
     return (
         <div id="actionPickerContainer">
             <p>Choose an action:</p>
