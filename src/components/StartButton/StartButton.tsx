@@ -1,5 +1,6 @@
 import { useActionStatus } from "../../context/ActionStatus";
 import { convertCountdownToTimestamp, convertTimeToTimestamp } from "../../utils/timeUtils";
+import timerIcon from "../../assets/icons8-timer-96.png";
 import './StartButton.css';
 
 type StartButtonProps = {
@@ -17,7 +18,7 @@ function StartButton ({ hours, minutes }: StartButtonProps) {
 
     return (
         <div id="startButtonContainer">
-            <button id="startButton" className={isActive ? "disabledButton" : ""} onClick={() => handleStart()}>Start</button>
+            <button id="startButton" className={isActive ? "disabledButton" : ""} onClick={() => handleStart()}><img src={timerIcon} alt="timer icon" id="timerIcon" />{mode === "countdown" ? "Start Countdown" : "Set Time"}</button>
         </div>
     );
 }
