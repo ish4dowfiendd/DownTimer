@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "downtimer",
+  "productName": "Down Timer",
   "version": "0.1.0",
   "identifier": "com.levi1.downtimer",
   "build": {
@@ -12,9 +12,8 @@
   "app": {
     "windows": [
       {
-        "title": "downtimer",
-        "width": 800,
-        "height": 600
+        "title": "Down Timer",
+        "maximized": true
       }
     ],
     "security": {
