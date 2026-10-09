@@ -1,8 +1,8 @@
 [package]
-name = "downtimer"
-version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
+name = "DownTimer"
+version = "1.0.0"
+description = "A Tauri app which allows the user to set automated power actions on their PC after or at a specified time"
+authors = ["Levi Nicholson Ives"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
