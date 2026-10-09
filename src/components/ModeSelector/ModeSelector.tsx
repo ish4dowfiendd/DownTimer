@@ -6,8 +6,8 @@ function ModeSelector () {
 
     return (
         <div id="modeSelectorContainer">
-            <button onClick={() => setMode("time")} className={mode === "time" ? "selected" : ""}>Time</button>
             <button onClick={() => setMode("countdown")} className={mode === "countdown" ? "selected" : ""}>Countdown</button>
+            <button onClick={() => setMode("time")} className={mode === "time" ? "selected" : ""}>Time</button>
         </div>
     )
 };
