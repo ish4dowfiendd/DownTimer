@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './CountdownPicker.css';
 
 type CountdownPickerProps = {
