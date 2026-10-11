@@ -12,6 +12,6 @@ export function convertTimeToTimestamp (hours: number, minutes: number): number 
 };
 
 export function convertCountdownToTimestamp (hours: number, minutes: number): number {
-  const durationMs = hours * 60 + minutes * 60_000;
+  const durationMs = (hours * 60 + minutes) * 60_000;
   return Date.now() + durationMs;
 };
