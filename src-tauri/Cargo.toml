@@ -1,6 +1,6 @@
 [package]
 name = "DownTimer"
-version = "1.0.1"
+version = "1.1.0"
 description = "A Tauri app which allows the user to set automated power actions on their PC after or at a specified time"
 authors = ["Levi Nicholson Ives"]
 edition = "2021"
